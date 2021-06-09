@@ -1,0 +1,85 @@
+	<!DOCTYPE html> 
+	<html> 
+	<head>
+
+	<link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio 4: Vídeo HTML5. Enunciado ejercicio 4</title>
+	</head>
+	<body> 
+
+	<div id="cabecera">
+		<a href="http://www.ilunion.com">
+		<img id="cabecera_logo" src="../images/cabecera-logoilunion.png" alt="ILUNION Técnología y ACCESIBILIDAD, logotipo"/></a>
+		<span id="cabecera_texto">Curso de desarrollo de páginas Web Accesibles</span>
+	</div>
+
+	<h1>Vídeo HTML5</h1>
+
+	 <div  style="text-align:center">
+	  <!--Inicio del reproductor-->
+	  <video id="video1" width="420">
+		<source src="Duck-Duck-Go.mp4" type="video/mp4">
+		<track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish" default>
+		<source src="Duck-Duck-Go.ogg" type="video/ogg">
+		<source src="Duck-Duck-Go.webm" type="video/webm">
+		
+		<a href="http://www.direccionDescarga.es">descargar el vídeo</a>
+	  </video>
+	  </br>
+	<!--Incio Botonera-->
+	  <button id="play">Play</button> 
+	  <button id="pause">Pause</button> 
+	  <button id="big">Big</button>
+	  <button id="small">Small</button>
+	  <button id="normal">Normal</button>
+	</div>
+	<!--Vídeo estandar-->
+	<div style="text-align:center; margin-top:3em;">
+	  <video style="width: 480px;" controls>
+		  <source src="Duck-Duck-Go.mp4" type="video/mp4">
+		  <track label="Español por Politecnia.net" kind="subtitles" srclang="es" src="subtitles_es.vtt" default="default">
+		  <track label="English by Politecnia.net" kind="subtitles" srclang="en" src="FSF_30_360p_en.vtt">
+		  <track label="Français par Politecnia.net"  kind="subtitles" srclang="fr" src="FSF_30_360p_fr.vtt">
+	  </video>
+	  </div>
+	  </div>
+	<!--Inicio de script botonera-->
+	<script> 
+	const myVideo = document.getElementById("video1"); 
+
+	const play = document.getElementById("play").addEventListener("click",()=>{
+		myVideo.play();
+	});
+
+	const pause= document.getElementById("pause").addEventListener("click",()=>{
+		myVideo.pause();
+	});
+
+	const big= document.getElementById("big").addEventListener("click",()=>{
+		myVideo.width = 560; 
+	});
+
+	const small= document.getElementById("small").addEventListener("click",()=>{
+		myVideo.width = 320; 
+	});
+
+	const normal= document.getElementById("normal").addEventListener("click",()=>{
+		myVideo.width = 420; 
+	});
+	// function makeBig() { 
+	// 	myVideo.width = 560; 
+	// } 
+
+	// function makeSmall() { 
+	// 	myVideo.width = 320; 
+	// } 
+
+	// function makeNormal() { 
+	// 	myVideo.width = 420; 
+	// } 
+	</script> 
+
+	</body> 
+	</html>
+		
