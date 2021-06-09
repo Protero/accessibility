@@ -1,13 +1,18 @@
 ﻿WEBVTT
+STYLE
+::cue {
+  
+  color: yellow;
+}
 
 Cue-1
-00:00:00.000 --> 00:00:08.000
+00:00:00.000 --> 00:00:06.000
 Una estrella lejana se acerca ...
 
 Cue-2
-00:00:08.000 --> 00:00:15.000
+00:00:06.000 --> 00:00:13.000 align:right
 a un gran agujero negro ...
 
 Cue-3
-00:00:15.000 --> 00:00:25.000
+00:00:13.000 --> 00:00:25.000 align:left
 y es totalmente devorada ...
