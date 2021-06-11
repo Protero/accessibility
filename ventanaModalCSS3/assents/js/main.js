@@ -19,7 +19,7 @@ const ocultarMostrar = () => {
 
     const valueContenido = document.getElementById("contenido");
     const valueMimodal = document.getElementById("miModal");
-    // const cierre = document.getElementById("closeModal");
+    
 
     const enlacesContenido = valueContenido.getElementsByTagName("a");
     const enlacesMimodal = valueMimodal.getElementsByTagName("a");
