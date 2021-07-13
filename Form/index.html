@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <label for="idName">Nombre: </label>
+        <input id="idName" type="text" autocomplete="name" name="name">
+        <p id="pAriaLive" aria-live="assertive" aria-atomic="true"></p>
+        <label for="idLastName">Apellido: </label>
+        <input id="idLastName" type="text" autocomplete="lName" name="lastName">
+
+    </div>
+
+  
+    <script>
+        const idName =  document.getElementById("idName");
+        const err = document.getElementById("pAriaLive");
+
+        idName.addEventListener("blur", () =>{
+            if (!idName.value) err.innerText = "Campo vacío"     
+        });
+
+    </script>
+        
+</body>
+</html>
